@@ -1,0 +1,190 @@
+:root {
+    --cor-bg-background: #262626;
+    --cor-font-primary: #f1f1f1;
+    --cor-black-light: #0a0a0aab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(170, 239, 239);
+    font-family: 'Poppins', sans-serif;
+    width: 1280px;
+    height: 100vh;
+}
+
+.logo-nav {
+    display: flex;    
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.logo-nav>img {
+    width: 200px;
+    margin-right: 24px;
+    border-radius: 9999px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.menu>li {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--cor-font-primary);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*
+Alinha itens no centro colocando um ao lado do outro
+*/
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+Adiciona padding left e Right 
+*/
+.px {
+    padding: 0 24px;
+}
+
+
+
+/*
+Adiciona padding Top e Bottom
+*/
+
+.py {
+    padding: 12px 0;
+}
+
+.content-left {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+
+}
+
+/*
+Estilização Botão
+*/
+
+
+.button {
+    background-color: var(--cor-black-light);
+    color: var(--cor-font-primary);
+    border-radius: 9999px;
+    text-align: center;
+    border: none;
+    padding: 12px;
+}
+
+
+/*
+Estilização do TextField
+*/
+
+.textFieldWrapper {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: var(--cor-bg-background);
+    border-radius: 9999px;
+    padding: 0 4px;
+    border: 2px solid;
+    border-color: var(--cor-black-light);
+}
+
+.textFieldWrapper>img {
+    margin-left: 2px;
+}
+
+.input {
+    color: var(--cor-font-primary);
+    padding: 8px 0;
+    padding-left: 4px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.finder {
+    align-items: center;
+    display: grid;
+    text-align: start;
+    padding: 10px;
+
+}
+.finder>img {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    border-radius: 9999px;
+    padding: inherit;
+}
+.finder>h1 {
+    display: flex;
+    color: #1515d1;
+    text-shadow: #1515d1;
+    font-size: x-large;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d2/Oleo_2.png);
+    background-size: contain;
+    border-radius: 9999px;
+    font-style: var(--cor-black-light);
+    padding: 10px;
+    width: 400px;
+    height: 175px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.finder>h1>button {
+    background-color: rgb(13, 231, 217);
+    color: #1515d1;
+    border-radius: 9999px;
+    text-align: left;
+    border: none;
+    padding: 12px;
+}
+.finder>h1>button:hover {
+    transition:0.2s;
+    cursor: pointer;
+    background-color: rgb(170, 239, 239);
+}
+
+.down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 280px;
+    margin-top: 20px;
+
+}
+
+.down>li {
+    justify-content: space-around;
+    color: #1515d1;
+    font-size: 15px;
+    cursor: pointer;
+}
